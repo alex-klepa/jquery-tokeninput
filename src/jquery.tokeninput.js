@@ -143,10 +143,10 @@ $.TokenList = function (input, url_or_data, settings) {
     // Initialization
     //
 
-    if ($.inArray(input.id, registry) != -1) {
+    if ($.inArray(input.id, registery) != -1) {
       return;
     }
-    registry.push(input.id);
+    registery.push(input.id);
     // Configure the data source
     if($.type(url_or_data) === "string" || $.type(url_or_data) === "function") {
         // Set the url to query against
